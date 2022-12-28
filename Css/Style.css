@@ -1,9 +1,7 @@
 
 body{margin: 0px;
     padding: 0px;
-    
-   
-    
+      
 }
 
 #left{ position: absolute;
@@ -51,32 +49,35 @@ a{
   text-decoration:none;
 }
 .container{
-  display: inline-block;
+  display: block;
   border-radius: 20px;
   
-  background-color: rgba(192, 170, 189, 0.582) ;
+  background-color: rgba(31, 204, 235, 0.582) ;
 padding: 5%;
   
-  color: white;
-  width: 35%;
+  color: rgb(197, 71, 71);
+  width: 30%;
   height: 200px;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin:  5% 5%;
+  
 }
 #_name{
   position:relative;
-  margin: 25%;
- font-size: x-large;
+  margin: 15%;
+ font-size: 140%;
+ color: bisque;
 }
 #name{
   position:relative;
   margin-left: 33%;
   height:12%;
+  color: green;
 }
 #_DOB{
   position:relative;
-  margin: 25%;
+  margin: 15%;
   font-size: x-large;
+  color: bisque;
 }
 #DOB{
   position:relative;
