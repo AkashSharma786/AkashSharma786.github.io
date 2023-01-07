@@ -1,8 +1,12 @@
+
 body{
     background-color: black;
+    font-family: "Subway Ticker";
+    src: url(/SUBWT___.ttf)
 }
+
 #input1{
-    
+   
     font-size: 35px;
     resize: none;
     display: flexbox;
@@ -20,7 +24,9 @@ body{
     border-bottom-right-radius:0 ;
     margin-top: 20px;
    margin-left: 12px;
-    
+   
+   font-family: "Subway Ticker";
+   src: url(/SUBWT___.ttf);
     
 }
 
@@ -41,7 +47,8 @@ body{
     border-bottom-right-radius:10px ;
 
     margin-top: 20px;
-   
+    font-family: "Subway Ticker";
+    src: url(/SUBWT___.ttf);
     margin-right: none;
 }
 input::-webkit-outer-spin-button{
@@ -63,7 +70,8 @@ input::-webkit-inner-spin-button{
 }
 
 .wholestructure{
-    
+    font-family: "Subway Ticker";
+    src: url(/SUBWT___.ttf);
    
     display: block;
      margin-left: auto;
@@ -88,7 +96,8 @@ input::-webkit-inner-spin-button{
     font-size: 20px;
     border-radius: 10px;
     background-color: rgb(247, 230, 210);
-    
+    font-family: "Subway Ticker";
+    src: url(/SUBWT___.ttf)
     
 
     
