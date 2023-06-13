@@ -1,129 +1,26 @@
-
-body{
-    background-color: black;
-    font-family: "Subway Ticker";
-    src: url(/SUBWT___.ttf)
+.input_task{
+    width: 70%;
+    margin: 2% auto;
 }
 
-#input1{
-   
-    font-size: 35px;
-    resize: none;
-    display: flexbox;
-    height: 50px;
-    width: 233px;
+.Tasks{
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: 1fr;
 
-    border-top: rgb(240, 169, 169) solid 2px;
-    border-bottom: rgb(240, 169, 169) solid 2px;
-    border-left: rgb(240, 169, 169) solid 2px;
-    border-right: none;
-
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius:0 ;
-    margin-top: 20px;
-   margin-left: 12px;
-   
-   font-family: "Subway Ticker";
-   src: url(/SUBWT___.ttf);
-    
 }
 
-#operationn{
-    font-size: 35px;
-    resize: none;
-    display: flexbox;
-    height: 50px;
-    width: 25px;
-    border-left: none;
-    border-right:rgb(240, 169, 169) solid 2px ;
-    border-top: rgb(240, 169, 169) solid 2px;
-    border-bottom: rgb(240, 169, 169) solid 2px;
-
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius:10px ;
-
-    margin-top: 20px;
-    font-family: "Subway Ticker";
-    src: url(/SUBWT___.ttf);
-    margin-right: none;
-}
-input::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin:0;
-}
-input::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin:0;
+.list-Decoration{
+    list-style: none;
+    width: 70%;
+    border: 1px solid green;
+    margin: 2% auto 0;
+    border-radius: 5px;
 }
 
-#Calculator{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 215px;
-    
-    color: rgb(220, 231, 155);
+.Tasks_text{
+    display: flex;
+    flex-direction: column;
 }
 
-.wholestructure{
-    font-family: "Subway Ticker";
-    src: url(/SUBWT___.ttf);
-   
-    display: block;
-     margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    background-color: aqua;
-    border-radius: 30px;
-    box-shadow: 2px 2px 2px 2px rgba(255, 0, 0, 0.363);
-}
-
-
-
-.buttonsize{
-    
-    border: red solid 2px;
-    width: 60px;
-    height: 60px;
-    padding: 5px;
-    margin: 3px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: rgb(247, 230, 210);
-    font-family: "Subway Ticker";
-    src: url(/SUBWT___.ttf)
-    
-
-    
-}
-.buttonsize:hover{
-    color: aqua;
-    background-color: rgb(210, 247, 247);
-    border: none;
-    font-size: 25px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-   
-}
-.buttonsize:active{
-    background-color: rgb(255, 255, 255);
-    color: rgb(42, 26, 179);
-}
-
-
-
-#buttonss{
-    display: block;
-    width: 280px;
-    height: 300px;
-    
-    margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
