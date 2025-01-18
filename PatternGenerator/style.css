@@ -1,0 +1,342 @@
+:root{
+    --line-width: 3px;
+    --small-line: 20vh;
+    --big-line: 40vh;
+    /* horizontal line transform */
+    --edge01-transform: translate(-10vh, -20vh);
+    --edge12-transform: translate(10vh, -20vh);
+    --edge34-transform: translate(-10vh, 0vh);
+    --edge45-transform: translate(10vh, 0vh);
+    --edge67-transform: translate(-10vh, 20vh);
+    --edge78-transform: translate(10vh, 20vh);
+
+    --edge02-transform: translate(0, -20vh);
+    --edge35-transform: translate(0vh, 0vh);
+    --edge68-transform: translate(0vh, 20vh);
+
+    /* vertical line transform */
+    --edge03-transform: translate(-20vh, -10vh);
+    --edge14-transform: translate(0vh, -10vh);
+    --edge25-transform: translate(20vh, -10vh);
+    --edge36-transform: translate(-20vh, 10vh);
+    --edge47-transform: translate(0vh, 10vh);
+    --edge58-transform: translate(20vh, 10vh);
+
+    --edge06-transform: translate(-20vh, 0);
+    --edge17-transform: translate(0vh, 0vh);
+    --edge28-transform: translate(20vh, 0);
+
+    /* diagonal 45deg line transform */
+    --edge04-transform: skew(45deg)  translate(0vh, -10vh);
+    --edge48-transform: skew(45deg)  translate(0vh, 10vh);
+    --edge15-transform: skew(45deg) translate(20vh,-10vh);
+    --edge37-transform: skew(45deg) translate(-20vh, 10vh);
+
+    --edge13-transform: skew(-45deg) translate(-20vh, -10vh);
+    --edge46-transform: skew(-45deg) translate(0vh, 10vh);
+    --edge24-transform: skew(-45deg) translate(0vh, -10vh);
+    --edge57-transform: skew(-45deg) translate(20vh, 10vh);
+
+    --edge08-transform: skew(45deg) translate(0vh,0vh);
+    --edge26-transform: skew(-45deg) translate(0vh, 0vh);
+
+    /* diagonal lines */
+
+    --edge05-transform: skew(63.5deg) translate(20vh, -10vh);
+    --edge07-transform: skew(27deg) translate(-10vh, 0vh);
+    --edge16-transform: skew(-27deg) translate(-10vh, 0vh);
+    --edge18-transform: skew(27deg) translate(10vh, 0vh);
+    --edge23-transform: skew(-63.5deg) translate(-20vh, -10vh);
+    --edge27-transform: skew(-27deg) translate(10vh, 0vh);
+    --edge38-transform: skew(63.5deg) translate(-20vh, 10vh);
+    --edge56-transform: skew(-63deg) translate(20vh, 10vh);
+
+
+
+}
+
+.box{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 60vh;
+    height: 60vh;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(148, 134, 97);
+    border-radius: 5%;
+    
+}
+
+.infoBox{
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    color: white;
+}
+
+.points{
+    
+    height: 2vh;
+    width: 2vh;
+    background-color: black;
+    transform: translate(9vh, 9vh);
+    border-radius: 50%;
+}
+
+.edges{
+    background-color: rgb(43, 29, 13);
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+/* Horizontal lines */
+
+.edge01{
+    height: var(--line-width);
+    width: var(--small-line);
+    transform: var(--edge01-transform);
+ 
+}
+
+.edge12{
+    height: var(--line-width);
+    width: var(--small-line);
+    transform: var(--edge12-transform);
+}
+
+.edge34{
+    height: var(--line-width);
+    width:var(--small-line);
+    transform: var(--edge34-transform);
+}
+.edge45{
+    height: var(--line-width);
+    width: var(--small-line);
+    transform: var(--edge45-transform);
+}
+.edge67{
+    height: var(--line-width);
+    width: var(--small-line);
+    transform: var(--edge67-transform);
+}
+.edge78{
+    height: var(--line-width);
+    width: var(--small-line);
+    transform: var(--edge78-transform);
+} 
+
+.edge02{
+    height: var(--line-width);
+    width: var(--big-line);
+    transform: var(--edge02-transform);
+}
+.edge35{
+    height: var(--line-width);
+    width: var(--big-line);
+    transform: var(--edge35-transform);
+}
+.edge68{
+    height: var(--line-width);
+    width: var(--big-line);
+    transform: var(--edge68-transform);
+}
+
+
+/* Vertical lines */
+
+ .edge03{
+    height: var(--small-line);
+    width: var(--line-width);
+     transform: var(--edge03-transform); 
+}
+ 
+.edge14{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge14-transform);
+}
+.edge25{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge25-transform);
+}
+.edge36{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge36-transform);
+}
+.edge47{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge47-transform);
+}
+.edge58{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge58-transform);
+} 
+
+.edge06{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge06-transform);
+}
+.edge17{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge17-transform);
+}
+.edge28{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge28-transform);
+}
+
+/* Diagonal 45deg lines */
+
+.edge04{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge04-transform);
+}
+
+.edge15{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge15-transform);
+}
+
+.edge37{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge37-transform);
+}
+
+.edge48{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge48-transform);
+}
+
+.edge13{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge13-transform);
+}
+
+.edge24{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge24-transform);
+}
+
+.edge46{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge46-transform);
+}
+
+.edge57{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge57-transform);
+}
+
+.edge08{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge08-transform);
+}
+   
+.edge26{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge26-transform);
+} 
+ 
+/* diagonal lines */
+
+.edge05{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge05-transform);
+}
+
+.edge07{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge07-transform);
+}
+
+
+.edge16{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge16-transform);
+}
+
+.edge18{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge18-transform);
+}
+
+
+.edge23{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge23-transform);
+}
+
+.edge27{
+    height: var(--big-line);
+    width: var(--line-width);
+    transform: var(--edge27-transform);
+}
+
+.edge38{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge38-transform);
+}   
+
+
+.edge56{
+    height: var(--small-line);
+    width: var(--line-width);
+    transform: var(--edge56-transform);
+}
+
+.buttonBox{
+    position: absolute;
+    bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vh;
+    margin-top: 20px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(41, 36, 7);
+    
+    height: 100vh;
+    margin: 0;
+}

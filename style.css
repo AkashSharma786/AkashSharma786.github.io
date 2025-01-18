@@ -1,26 +1,217 @@
-.input_task{
-    width: 70%;
-    margin: 2% auto;
-}
 
-.Tasks{
-    display: grid;
-    grid-template-columns: 7fr 1fr 1fr;
-    gap: 10px;
-    grid-template-rows: 1fr;
 
-}
-
-.list-Decoration{
-    list-style: none;
-    width: 70%;
-    border: 1px solid green;
-    margin: 2% auto 0;
-    border-radius: 5px;
-}
-
-.Tasks_text{
+body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    
+  
+    scrollbar-width: 5px;
+
+}
+
+.sections{
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+    width: 100vw;
+
+ 
+    min-height: 10vh;
+   
+    /* background-color: #00000005; */
+    position: fixed;
+    z-index: 1;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(10px, 5vw);
+    width: 80vw;
+   
+}
+.navButtons{
+    font-size: max(3vh, 20px);
+    text-decoration: solid;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+
+
+.home{
+   
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(135deg, #2e2c2cce, #042c0ec5),
+    linear-gradient(90deg, rgba(51, 47, 35, 0.801), rgba(21, 47, 51, 0.788)); /* Define your gradient colors */
+    background-blend-mode: overlay;
+
+}
+
+
+.intro{
+    font-size: Max(8vw, 60px);
+    text-decoration: none;
+    box-sizing: content-box;
+    font-family: "Public Sans", serif;
+    font-weight: normal;
+    font-optical-sizing: auto;
+    background: linear-gradient(to right, #e2e0be, #60c74b, rgb(54, 187, 204)); /* Define your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    padding: 0;
+}
+.subIntro{
+    font-size: Max(3vw, 30px);
+    text-decoration: none;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(231, 225, 213);
+    font-family: "Roboto Slab" ,'Times New Roman', Times, serif;
+}
+
+.introContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: start;
+ 
+   
+    
+
+
+    height: 40vh;
+    width: 70vw;
+}
+.logo {
+    width: 70px; /* Set the desired width of the container */
+    height: 70px; /* Set the desired height of the container */
+    overflow: hidden; /* Hide any overflow content */
+    /* position: absolute;
+    top: 10px;
+    left: 30px; */
+ 
+    border-radius: 50% ;
+}
+
+.logo img {
+  
+    object-fit:  fill; /* Ensures the image covers the container */
+  
+   
+
+}
+
+
+.skills{
+
+    background: linear-gradient(135deg, #4d575f, #242c08f6);
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+
+  padding: 2vh 0;
+
+}
+
+.cardBox{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5vh 5vw;
+    width: 80vw;
+    
+    
+
+    gap: 2vw;
+    background-color: rgba(216, 226, 157, 0.575);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    min-width: 300px;
+    min-height: 300px;
+    
+    width: max(38vw, 300px);
+    height: max(38vh, 300px);
+    background-color: rgb(206, 209, 187);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(85, 57, 57, 0.1);
+    
+}
+
+.projectCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: max(20vw, 300px);
+    min-height: 300px;
+    background-color: rgb(206, 209, 187);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(85, 57, 57, 0.1);
+    padding: 10px;
+    
+}
+.projectCard img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projectTitle{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    font-family: "Roboto Slab" ,'Times New Roman', Times, serif;
+
+    text-align: center;
+
+}
+.projectDescription{
+    font-size: normal;
+    font-weight: 300;
+    color: black;
+    font-family: "Roboto Slab" ,'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.projects{
+    background: linear-gradient(60deg, #4e3f24, #102c28f6);
+    padding: 2vh 0;
+
 }
 
