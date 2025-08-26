@@ -61,8 +61,8 @@ body{
    
     display: flex;
     flex-direction: column;
-    background:linear-gradient(135deg, #2e2c2cce, #042c0ec5),
-    linear-gradient(90deg, rgba(51, 47, 35, 0.801), rgba(21, 47, 51, 0.788)); /* Define your gradient colors */
+    background:linear-gradient(135deg, #ac5a5ace, #2f703fc5),
+    linear-gradient(90deg, rgba(230, 203, 123, 0.801), rgba(47, 105, 114, 0.788)); /* Define your gradient colors */
     background-blend-mode: overlay;
 
 }
@@ -128,7 +128,7 @@ body{
 
 .skills{
 
-    background: linear-gradient(135deg, #4d575f, #242c08f6);
+    background: linear-gradient(135deg, #72a2c9, #a7af5af6);
     
     display: flex;
     justify-content: center;
@@ -150,7 +150,7 @@ body{
     
 
     gap: 2vw;
-    background-color: rgba(216, 226, 157, 0.575);
+    background-color: rgba(216, 226, 157, 0.171);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -210,8 +210,48 @@ body{
 }
 
 .projects{
-    background: linear-gradient(60deg, #4e3f24, #102c28f6);
+    background: linear-gradient(60deg, #e69a43, #b9626df6);
     padding: 2vh 0;
 
 }
+.langProficiencyCard{
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    height: 10.5%;
+    background-color: rgb(136, 133, 133);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.langLogo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.rating{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.devframeWorks{
+    margin:3.5%;
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+}
 
+.devTools{
+    margin-top:3.5%;
+    margin-left: 3%;
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+}

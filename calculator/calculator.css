@@ -115,8 +115,6 @@ input::-webkit-inner-spin-button{
     color: rgb(42, 26, 179);
 }
 
-
-
 #buttonss{
     display: block;
     width: 280px;
@@ -126,4 +124,15 @@ input::-webkit-inner-spin-button{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.langProficiencyCard{
+    width: 100px;
+    height: 15%;
+    background-color: rgb(163, 71, 71);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
 }
