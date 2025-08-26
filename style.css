@@ -61,8 +61,8 @@ body{
    
     display: flex;
     flex-direction: column;
-    background:linear-gradient(135deg, #ac5a5ace, #2f703fc5),
-    linear-gradient(90deg, rgba(230, 203, 123, 0.801), rgba(47, 105, 114, 0.788)); /* Define your gradient colors */
+    background:linear-gradient(135deg,  #2f703fc5,#ac5a5ace),
+    linear-gradient(90deg, rgba(47, 105, 114, 0.788), rgba(230, 203, 123, 0.801)); /* Define your gradient colors */
     background-blend-mode: overlay;
 
 }
