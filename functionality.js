@@ -23,7 +23,7 @@ const subjectInput = document.getElementById('subjectInput');
 const messageInput = document.getElementById('messageInput');
 const nameRegex = /^[a-zA-Z\s]{2,}$/;
 const subjectRegex = /^[a-zA-Z0-9\s]{2,}$/;
-const messageRegex = /^[a-zA-Z0-9\s]{5,}$/;
+const messageRegex = /^{5,}$/;
 
 
 
