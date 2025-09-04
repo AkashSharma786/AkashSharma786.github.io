@@ -36,6 +36,49 @@ body{
     /* background-color: #00000005; */
     position: fixed;
     z-index: 1;
+    
+}
+
+.navMenu{
+    display: flex;
+    
+    position: fixed;
+    margin: auto;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.navMenu span{
+    position: absolute;
+    width:100%;
+    height: 4px;
+    background-color: rgb(201, 26, 157);
+ 
+    border-radius: 25px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.navMenu span:nth-child(1){
+    top: 25%;
+}
+.navMenu span:nth-child(3){
+    top: 75%;
+}
+.navMenu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.navMenu.active span:nth-child(2){
+    opacity: 0;
+}
+.navMenu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .navContainer{
@@ -55,7 +98,43 @@ body{
 
     
 }
+@media (max-width: 600px) {
+   
+  #navBar {
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    /* gap:max(50px, 35vw); */
+    height: auto;
+    min-height: 0;
+    padding: 10px 0;
+    
+    width: 60vw;
+    margin-left: 40vw;
+    right: -60vw;
+    transition: right 0.3s ease;
+    
+  }
 
+  #navBar.active{
+    right:0;
+  }
+  .navContainer {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    background-color: #00000056;
+    
+   
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .navButtons {
+    font-size: max(3vh, 20px);
+    padding: 8px 0;
+  }
+}
 
 .home{
    
@@ -136,6 +215,75 @@ body{
     
 
   padding: 2vh 0;
+
+}
+.contact{
+
+    background: linear-gradient(135deg, #0c853a, #5e3891f6);
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+
+  padding: 2vh 0;
+
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    min-width: 300px;
+    gap: 15px;
+    background-color: rgba(216, 226, 157, 0.171);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contactTitle{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(230, 229, 195);
+    font-family: 'Times New Roman', Times, serif;
+
+    text-align: center;
+
+}
+
+.contactLabel{
+    font-size: x-large;
+    font-weight: 500;
+    color: rgb(231, 235, 195);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.contact input, .contact textarea{
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contactButton{
+    width: 30%;
+    height: 60px;
+    margin: auto;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(54, 187, 204);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
